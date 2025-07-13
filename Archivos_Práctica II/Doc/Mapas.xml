@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Mapas.xsd">
+	<sitio sitio="Nautiloid" subterraneo="False">
+		<NPCs>
+			<NPC id="Myrnath">
+				<Tipo>Elves</Tipo>
+				<Fuerza>10</Fuerza>
+				<Destreza>10</Destreza>
+				<Constitucion>10</Constitucion>
+				<Inteligencia>10</Inteligencia>
+				<Sabiduria>10</Sabiduria>
+				<Carisma>10</Carisma>
+			</NPC>
+		</NPCs>
+		<enemigos>
+			<enemigo id="1">
+				<Nombre>Intellect Devourer</Nombre>
+				<Tipo>Aberrations</Tipo>
+				<Fuerza>6</Fuerza>
+				<Destreza>14</Destreza>
+				<Constitucion>13</Constitucion>
+				<Inteligencia>12</Inteligencia>
+				<Sabiduria>11</Sabiduria>
+				<Carisma>10</Carisma>
+			</enemigo>
+			<enemigo id="18">
+				<Nombre>Quelenna</Nombre>
+				<Tipo>Elves</Tipo>
+				<Fuerza>9</Fuerza>
+				<Destreza>11</Destreza>
+				<Constitucion>10</Constitucion>
+				<Inteligencia>14</Inteligencia>
+				<Sabiduria>12</Sabiduria>
+				<Carisma>10</Carisma>
+			</enemigo>
+			<enemigo id="75">
+				<Nombre>Orin The Red</Nombre>
+				<Tipo>Monstrosity</Tipo>
+				<Fuerza>22</Fuerza>
+				<Destreza>14</Destreza>
+				<Constitucion>17</Constitucion>
+				<Inteligencia>14</Inteligencia>
+				<Sabiduria>16</Sabiduria>
+				<Carisma>19</Carisma>
+				<elementosboss>
+					<NFases>2</NFases>
+					<Acto>3</Acto>
+					<Habilidades>Fast Hands</Habilidades>
+				</elementosboss>
+			</enemigo>
+			<enemigo id="76">
+				<Nombre>Lord Enver Gortash</Nombre>
+				<Tipo>Humans</Tipo>
+				<Fuerza>14</Fuerza>
+				<Destreza>20</Destreza>
+				<Constitucion>10</Constitucion>
+				<Inteligencia>20</Inteligencia>
+				<Sabiduria>16</Sabiduria>
+				<Carisma>18</Carisma>
+				<elementosboss>
+					<NFases>1</NFases>
+					<Acto>3</Acto>
+					<Habilidades>Dark Devotion</Habilidades>
+				</elementosboss>
+			</enemigo>
+		</enemigos>
+	</sitio>
+	<sitio sitio="Blighted Village" subterraneo="True">
+		<NPCs>
+			<NPC id="Lump the Enlightened">
+				<Tipo>Ogres</Tipo>
+				<Fuerza>19</Fuerza>
+				<Destreza>12</Destreza>
+				<Constitucion>16</Constitucion>
+				<Inteligencia>19</Inteligencia>
+				<Sabiduria>7</Sabiduria>
+				<Carisma>7</Carisma>
+			</NPC>
+			<NPC id="Scratch">
+				<Tipo>Beasts</Tipo>
+				<Fuerza>13</Fuerza>
+				<Destreza>14</Destreza>
+				<Constitucion>12</Constitucion>
+				<Inteligencia>3</Inteligencia>
+				<Sabiduria>12</Sabiduria>
+				<Carisma>7</Carisma>
+			</NPC>
+		</NPCs>
+		<enemigos>
+			<enemigo id="8">
+				<Nombre>Grukkoh</Nombre>
+				<Tipo>Bugbears</Tipo>
+				<Fuerza>15</Fuerza>
+				<Destreza>14</Destreza>
+				<Constitucion>13</Constitucion>
+				<Inteligencia>8</Inteligencia>
+				<Sabiduria>11</Sabiduria>
+				<Carisma>9</Carisma>
+			</enemigo>
+			<enemigo id="9">
+				<Nombre>Scrawny Bugbear</Nombre>
+				<Tipo>Bugbears</Tipo>
+				<Fuerza>15</Fuerza>
+				<Destreza>14</Destreza>
+				<Constitucion>13</Constitucion>
+				<Inteligencia>8</Inteligencia>
+				<Sabiduria>11</Sabiduria>
+				<Carisma>9</Carisma>
+			</enemigo>
+		</enemigos>
+	</sitio>
+</mapa>

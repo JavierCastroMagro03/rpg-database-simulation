@@ -1,0 +1,113 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="objetos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="armas">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="arma" maxOccurs="20" minOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Nombre">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="25" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element type="xs:integer" name="Damage" />
+                    <xs:element type="xs:string" name="Tipo" />
+                    <xs:element type="xs:string" name="Habilidad" />
+                    <xs:element name="Rareza">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="Common" />
+                          <xs:enumeration value="Uncommon" />
+                          <xs:enumeration value="Rare" />
+                          <xs:enumeration value="Very Rare" />
+                          <xs:enumeration value="Legendary" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element type="xs:integer" name="Valor" />
+                  </xs:sequence>
+                  <xs:attribute type="xs:byte" name="id" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="armaduras">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="armadura" maxOccurs="20" minOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Nombre">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="25" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element type="xs:integer" name="Defensa" />
+                    <xs:element type="xs:string" name="Pasiva" />
+                    <xs:element type="xs:string" name="Tipo" />
+                    <xs:element name="Rareza">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="Common" />
+                          <xs:enumeration value="Uncommon" />
+                          <xs:enumeration value="Rare" />
+                          <xs:enumeration value="Very Rare" />
+                          <xs:enumeration value="Legendary" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element type="xs:integer" name="Valor" />
+                  </xs:sequence>
+                  <xs:attribute type="xs:byte" name="id" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="consumibles">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="consumible" maxOccurs="20" minOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Nombre">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:maxLength value="25" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="Tipo" />
+                    <xs:element type="xs:string" name="Efecto" />
+                    <xs:element name="Rareza">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="Common" />
+                          <xs:enumeration value="Uncommon" />
+                          <xs:enumeration value="Rare" />
+                          <xs:enumeration value="Very Rare" />
+                          <xs:enumeration value="Legendary" />
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element type="xs:integer" name="Valor" />
+                  </xs:sequence>
+                  <xs:attribute type="xs:byte" name="id" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

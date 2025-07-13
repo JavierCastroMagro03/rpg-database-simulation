@@ -1,0 +1,111 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Usuarios">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Usuario" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Password">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Partidas">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Partida" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType mixed="true">
+                        <xs:sequence>
+                          <xs:element type="xs:byte" name="Escenario" minOccurs="0" />
+                          <xs:element type="xs:integer" name="Duracion" minOccurs="0" />
+                          <xs:element type="xs:byte" name="Progreso" minOccurs="0" />
+                          <xs:element name="Personajes" minOccurs="0">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Personaje" maxOccurs="4" minOccurs="1">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Nombre">
+                                        <xs:simpleType>
+                                          <xs:restriction base="xs:string">
+                                            <xs:maxLength value="20" />
+                                          </xs:restriction>
+                                        </xs:simpleType>
+                                      </xs:element>
+                                      <xs:element type="xs:string" name="Raza" />
+                                      <xs:element type="xs:string" name="Clase" />
+                                      <xs:element type="xs:string" name="Avatar" />
+                                      <xs:element name="Nivel">
+                                        <xs:simpleType>
+                                          <xs:restriction base="xs:integer">
+                                            <xs:maxInclusive value="20" />
+                                          </xs:restriction>
+                                        </xs:simpleType>
+                                      </xs:element>
+                                      <xs:element type="xs:integer" name="Fuerza" />
+                                      <xs:element type="xs:integer" name="Destreza" />
+                                      <xs:element type="xs:integer" name="Constitucion" />
+                                      <xs:element type="xs:integer" name="Inteligencia" />
+                                      <xs:element type="xs:integer" name="Sabiduria" />
+                                      <xs:element type="xs:integer" name="Carisma" />
+                                      <xs:element name="Hechizos" minOccurs="0">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Hechizo" maxOccurs="17" minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="Nombre_Hechizo">
+                                                    <xs:simpleType>
+                                                      <xs:restriction base="xs:string">
+                                                        <xs:maxLength value="30" />
+                                                      </xs:restriction>
+                                                    </xs:simpleType>
+                                                  </xs:element>
+                                                  <xs:element type="xs:integer" name="Damage" />
+                                                  <xs:element type="xs:integer" name="Curacion" />
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="FormaBestias" minOccurs="0">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="FormaBestia" maxOccurs="unbounded"
+                                              minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element type="xs:string" name="Animal" />
+                                                  <xs:element type="xs:string" name="Habilidad" />
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute type="xs:byte" name="id" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute type="xs:byte" name="id" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="id" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

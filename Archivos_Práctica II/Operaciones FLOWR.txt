@@ -1,0 +1,100 @@
+Consulta 1:
+for $arma in /objetos/armas/arma 
+where $arma/Tipo = 'Staff' 
+return $arma
+
+---------------------------------------------------------------------------
+
+Consulta 2:
+for $partida in /Usuarios/Usuario/Partidas/Partida[Duracion > 5]
+return <Partida id="{data($partida/@id)}"/>
+
+---------------------------------------------------------------------------
+
+Consulta 3:
+for $enemigo in /mapa/sitio[@sitio = 'Nautiloid']/enemigos/enemigo
+return $enemigo
+
+---------------------------------------------------------------------------
+
+Consulta 4:
+for $enemigo in /mapa/sitio/enemigos/enemigo
+return 
+    <enemigo>
+        <Nombre>{data($enemigo/Nombre)}</Nombre>
+        <Tipo>{data($enemigo/Tipo)}</Tipo>
+        <Fuerza>{data($enemigo/Fuerza)}</Fuerza>
+        <Destreza>{data($enemigo/Destreza)}</Destreza>
+        <Constitucion>{data($enemigo/Constitucion)}</Constitucion>
+        <Inteligencia>{data($enemigo/Inteligencia)}</Inteligencia>
+        <Sabiduria>{data($enemigo/Sabiduria)}</Sabiduria>
+        <Carisma>{data($enemigo/Carisma)}</Carisma>
+        { if (exists($enemigo/elementosboss)) then
+            <elementosboss>
+                <NFases>{data($enemigo/elementosboss/NFases)}</NFases>
+                <Acto>{data($enemigo/elementosboss/Acto)}</Acto>
+                <Habilidades>{data($enemigo/elementosboss/Habilidades)}</Habilidades>
+            </elementosboss>
+        else ()
+        }
+    </enemigo>
+
+---------------------------------------------------------------------------
+
+Consulta 5:
+for $armadura in /objetos/armaduras/armadura[Pasiva/text()]
+let $objeto := /objetos/*[@id = $armadura/@id_objeto]
+return 
+  <armadura>
+    <Nombre>{data($armadura/Nombre)}</Nombre>
+    <Pasiva>{data($armadura/Pasiva)}</Pasiva>
+    <Rareza>{data($armadura/Rareza)}</Rareza>
+  </armadura>
+
+---------------------------------------------------------------------------
+
+Consulta 6:
+for $tipo in distinct-values(/mapa/sitio/enemigos/enemigo/Tipo)
+let $cantidad := count(/mapa/sitio/enemigos/enemigo[Tipo = $tipo])
+return <resultado><Tipo>{$tipo}</Tipo><Cantidad_Enemigos>{$cantidad}</Cantidad_Enemigos></resultado>
+
+---------------------------------------------------------------------------
+
+Consulta 7:
+for $usuario in /Usuarios/Usuario
+for $personaje in $usuario/Partidas/Partida/Personajes/Personaje
+group by $raza := $personaje/Raza
+return 
+  <PromedioNivel>
+    <Raza>{data($raza)}</Raza>
+    <PromedioNivel>{avg($personaje/Nivel)}</PromedioNivel>
+  </PromedioNivel>
+
+---------------------------------------------------------------------------
+
+Consulta 8:
+for $clase in distinct-values(/Usuarios/Usuario/Partidas/Partida/Personajes/Personaje/Clase)
+let $promedio :=
+  avg(
+    for $personaje in /Usuarios/Usuario/Partidas/Partida/Personajes/Personaje[Clase = $clase]
+    return xs:integer($personaje/Fuerza)
+  )
+order by $clase
+return <PromedioClase>
+          <Clase>{$clase}</Clase>
+          <PromedioFuerza>{round($promedio, 2)}</PromedioFuerza>
+        </PromedioClase>
+
+---------------------------------------------------------------------------
+
+Consulta 9:
+for $armadura in /objetos/armaduras/armadura[Valor > 10]
+let $objeto := /objetos/*[@id = $armadura/@id_objeto]
+order by $objeto/Rareza
+return 
+  <armadura>
+    <Nombre>{data($armadura/Nombre)}</Nombre>
+    <Valor>{data($armadura/Valor)}</Valor>
+    <Rareza>{data($armadura/Rareza)}</Rareza>
+  </armadura>
+

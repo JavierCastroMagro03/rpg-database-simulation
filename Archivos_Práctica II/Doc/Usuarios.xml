@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Usuarios xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Usuarios.xsd">
+    <Usuario id="Zephyr">
+        <Password>GwYhElLZgM</Password>
+        <Partidas>
+            <Partida id="1">
+                <Escenario>5</Escenario>
+                <Duracion>5</Duracion>
+                <Progreso>4</Progreso>
+                <Personajes>
+                    <Personaje id="1">
+                        <Nombre>Laezel</Nombre>
+                        <Raza>Githyanki</Raza>
+                        <Clase>Fighter</Clase>
+                        <Avatar>False</Avatar>
+                        <Nivel>7</Nivel>
+                        <Fuerza>17</Fuerza>
+                        <Destreza>13</Destreza>
+                        <Constitucion>15</Constitucion>
+                        <Inteligencia>10</Inteligencia>
+                        <Sabiduria>12</Sabiduria>
+                        <Carisma>8</Carisma>
+                        <Hechizos>
+                            <Hechizo>
+                                <Nombre_Hechizo>Maleficio</Nombre_Hechizo>
+                                <Damage>6</Damage>
+                                <Curacion>0</Curacion>
+                            </Hechizo>
+                            <Hechizo>
+                                <Nombre_Hechizo>Agarre electrizante</Nombre_Hechizo>
+                                <Damage>8</Damage>
+                                <Curacion>0</Curacion>
+                            </Hechizo>
+                            <Hechizo>
+                                <Nombre_Hechizo>Rayo de escarcha</Nombre_Hechizo>
+                                <Damage>10</Damage>
+                                <Curacion>0</Curacion>
+                            </Hechizo>
+                            <Hechizo>
+                                <Nombre_Hechizo>Curar Heridas</Nombre_Hechizo>
+                                <Damage>0</Damage>
+                                <Curacion>8</Curacion>
+                            </Hechizo>
+                        </Hechizos>
+                    </Personaje>
+
+                    <Personaje id="12">
+                        <Nombre>Javier</Nombre>
+                        <Raza>Drow</Raza>
+                        <Clase>Warlock</Clase>
+                        <Avatar>True</Avatar>
+                        <Nivel>2</Nivel>
+                        <Fuerza>8</Fuerza>
+                        <Destreza>17</Destreza>
+                        <Constitucion>10</Constitucion>
+                        <Inteligencia>15</Inteligencia>
+                        <Sabiduria>12</Sabiduria>
+                        <Carisma>8</Carisma>
+                        <Hechizos>
+                            <Hechizo>
+                                <Nombre_Hechizo>Curacion empoderada</Nombre_Hechizo>
+                                <Damage>0</Damage>
+                                <Curacion>6</Curacion>
+                            </Hechizo>
+                            <Hechizo>
+                                <Nombre_Hechizo>Proyectil m gico</Nombre_Hechizo>
+                                <Damage>15</Damage>
+                                <Curacion>0</Curacion>
+                            </Hechizo>
+                            <Hechizo>
+                                <Nombre_Hechizo>Rayo de escarcha</Nombre_Hechizo>
+                                <Damage>10</Damage>
+                                <Curacion>0</Curacion>
+                            </Hechizo>
+                        </Hechizos>
+                    </Personaje>
+
+
+                    <Personaje id="7">
+                        <Nombre>Jaheira</Nombre>
+                        <Raza>Half-Elf</Raza>
+                        <Clase>Druid</Clase>
+                        <Avatar>False</Avatar>
+                        <Nivel>3</Nivel>
+                        <Fuerza>10</Fuerza>
+                        <Destreza>14</Destreza>
+                        <Constitucion>14</Constitucion>
+                        <Inteligencia>8</Inteligencia>
+                        <Sabiduria>17</Sabiduria>
+                        <Carisma>12</Carisma>
+                        <Hechizos>
+                            <Hechizo>
+                                <Nombre_Hechizo>Palabra de curacion</Nombre_Hechizo>
+                                <Damage>0</Damage>
+                                <Curacion>7</Curacion>
+                            </Hechizo>
+                            <Hechizo>
+                                <Nombre_Hechizo>Ola atronadora</Nombre_Hechizo>
+                                <Damage>16</Damage>
+                                <Curacion>0</Curacion>
+                            </Hechizo>
+                            <Hechizo>
+                                <Nombre_Hechizo>Curacion empoderada</Nombre_Hechizo>
+                                <Damage>0</Damage>
+                                <Curacion>6</Curacion>
+                            </Hechizo>
+                            <Hechizo>
+                                <Nombre_Hechizo>Burla Danina</Nombre_Hechizo>
+                                <Damage>4</Damage>
+                                <Curacion>0</Curacion>
+                            </Hechizo>
+                        </Hechizos>
+                        <FormaBestias>
+                            <FormaBestia>
+                                <Animal>Cat</Animal>
+                                <Habilidad>Speed</Habilidad>
+                            </FormaBestia>
+                            <FormaBestia>
+                                <Animal>Wolf</Animal>
+                                <Habilidad>Strength</Habilidad>
+                            </FormaBestia>
+                            <FormaBestia>
+                                <Animal>Spider</Animal>
+                                <Habilidad>Poison</Habilidad>
+                            </FormaBestia>
+                            <FormaBestia>
+                                <Animal>Owlbear</Animal>
+                                <Habilidad>Strength</Habilidad>
+                            </FormaBestia>
+                            <FormaBestia>
+                                <Animal>Panther</Animal>
+                                <Habilidad>Speed</Habilidad>
+                            </FormaBestia>
+                        </FormaBestias>
+                    </Personaje>
+
+                    <Personaje id="4">
+                        <Nombre>Shadowheart</Nombre>
+                        <Raza>Half-Elf</Raza>
+                        <Clase>Cleric</Clase>
+                        <Avatar>False</Avatar>
+                        <Nivel>12</Nivel>
+                        <Fuerza>13</Fuerza>
+                        <Destreza>13</Destreza>
+                        <Constitucion>14</Constitucion>
+                        <Inteligencia>10</Inteligencia>
+                        <Sabiduria>17</Sabiduria>
+                        <Carisma>8</Carisma>
+
+                        <Hechizos>
+                            <Hechizo>
+                                <Nombre_Hechizo>Descarga sobrenatural</Nombre_Hechizo>
+                                <Damage>10</Damage>
+                                <Curacion>0</Curacion>
+                            </Hechizo>
+                            <Hechizo>
+                                <Nombre_Hechizo>Rayo de escarcha</Nombre_Hechizo>
+                                <Damage>10</Damage>
+                                <Curacion>0</Curacion>
+                            </Hechizo>
+                            <Hechizo>
+                                <Nombre_Hechizo>Luz Sanadora</Nombre_Hechizo>
+                                <Damage>0</Damage>
+                                <Curacion>9</Curacion>
+                            </Hechizo>
+                            <Hechizo>
+                                <Nombre_Hechizo>Mano Sanadora</Nombre_Hechizo>
+                                <Damage>0</Damage>
+                                <Curacion>5</Curacion>
+                            </Hechizo>
+                        </Hechizos>
+                    </Personaje>
+                </Personajes>
+            </Partida>
+            <Partida id="2">
+                <Escenario>4</Escenario>
+                <Duracion>3</Duracion>
+                <Progreso>3</Progreso>
+                <Personajes>
+                    <Personaje id="1">
+                        <Nombre>Laezel</Nombre>
+                        <Raza>Githyanki</Raza>
+                        <Clase>Fighter</Clase>
+                        <Avatar>False</Avatar>
+                        <Nivel>7</Nivel>
+                        <Fuerza>17</Fuerza>
+                        <Destreza>13</Destreza>
+                        <Constitucion>15</Constitucion>
+                        <Inteligencia>10</Inteligencia>
+                        <Sabiduria>12</Sabiduria>
+                        <Carisma>8</Carisma>
+                        <Hechizos>
+                            <Hechizo>
+                                <Nombre_Hechizo>Maleficio</Nombre_Hechizo>
+                                <Damage>6</Damage>
+                                <Curacion>0</Curacion>
+                            </Hechizo>
+                            <Hechizo>
+                                <Nombre_Hechizo>Agarre electrizante</Nombre_Hechizo>
+                                <Damage>8</Damage>
+                                <Curacion>0</Curacion>
+                            </Hechizo>
+                            <Hechizo>
+                                <Nombre_Hechizo>Rayo de escarcha</Nombre_Hechizo>
+                                <Damage>10</Damage>
+                                <Curacion>0</Curacion>
+                            </Hechizo>
+                            <Hechizo>
+                                <Nombre_Hechizo>Curar Heridas</Nombre_Hechizo>
+                                <Damage>0</Damage>
+                                <Curacion>8</Curacion>
+                            </Hechizo>
+                        </Hechizos>
+                    </Personaje>
+
+                    <Personaje id="12">
+                        <Nombre>Javier</Nombre>
+                        <Raza>Drow</Raza>
+                        <Clase>Warlock</Clase>
+                        <Avatar>True</Avatar>
+                        <Nivel>2</Nivel>
+                        <Fuerza>8</Fuerza>
+                        <Destreza>17</Destreza>
+                        <Constitucion>10</Constitucion>
+                        <Inteligencia>15</Inteligencia>
+                        <Sabiduria>12</Sabiduria>
+                        <Carisma>8</Carisma>
+                        <Hechizos>
+                            <Hechizo>
+                                <Nombre_Hechizo>Curacion empoderada</Nombre_Hechizo>
+                                <Damage>0</Damage>
+                                <Curacion>6</Curacion>
+                            </Hechizo>
+                            <Hechizo>
+                                <Nombre_Hechizo>Proyectil m gico</Nombre_Hechizo>
+                                <Damage>15</Damage>
+                                <Curacion>0</Curacion>
+                            </Hechizo>
+                            <Hechizo>
+                                <Nombre_Hechizo>Rayo de escarcha</Nombre_Hechizo>
+                                <Damage>10</Damage>
+                                <Curacion>0</Curacion>
+                            </Hechizo>
+                        </Hechizos>
+                    </Personaje>
+
+
+                    <Personaje id="7">
+                        <Nombre>Jaheira</Nombre>
+                        <Raza>Half-Elf</Raza>
+                        <Clase>Druid</Clase>
+                        <Avatar>False</Avatar>
+                        <Nivel>3</Nivel>
+                        <Fuerza>10</Fuerza>
+                        <Destreza>14</Destreza>
+                        <Constitucion>14</Constitucion>
+                        <Inteligencia>8</Inteligencia>
+                        <Sabiduria>17</Sabiduria>
+                        <Carisma>12</Carisma>
+                        <Hechizos>
+                            <Hechizo>
+                                <Nombre_Hechizo>Palabra de curacion</Nombre_Hechizo>
+                                <Damage>0</Damage>
+                                <Curacion>7</Curacion>
+                            </Hechizo>
+                            <Hechizo>
+                                <Nombre_Hechizo>Ola atronadora</Nombre_Hechizo>
+                                <Damage>16</Damage>
+                                <Curacion>0</Curacion>
+                            </Hechizo>
+                            <Hechizo>
+                                <Nombre_Hechizo>Curacion empoderada</Nombre_Hechizo>
+                                <Damage>0</Damage>
+                                <Curacion>6</Curacion>
+                            </Hechizo>
+                            <Hechizo>
+                                <Nombre_Hechizo>Burla Danina</Nombre_Hechizo>
+                                <Damage>4</Damage>
+                                <Curacion>0</Curacion>
+                            </Hechizo>
+                        </Hechizos>
+                    </Personaje>
+
+                    <Personaje id="3">
+
+                        <Nombre>Wyll</Nombre>
+                        <Raza>Human</Raza>
+                        <Clase>Warlock</Clase>
+                        <Avatar>False</Avatar>
+                        <Nivel>4</Nivel>
+                        <Fuerza>8</Fuerza>
+                        <Destreza>13</Destreza>
+                        <Constitucion>14</Constitucion>
+                        <Inteligencia>13</Inteligencia>
+                        <Sabiduria>10</Sabiduria>
+                        <Carisma>17</Carisma>
+                        <Hechizos>
+                            <Hechizo>
+                                <Nombre_Hechizo>Toque M dico</Nombre_Hechizo>
+                                <Damage>0</Damage>
+                                <Curacion>6</Curacion>
+                            </Hechizo>
+                            <Hechizo>
+                                <Nombre_Hechizo>Rayo de escarcha</Nombre_Hechizo>
+                                <Damage>10</Damage>
+                                <Curacion>0</Curacion>
+                            </Hechizo>
+                            <Hechizo>
+                                <Nombre_Hechizo>Luz Sanadora</Nombre_Hechizo>
+                                <Damage>0</Damage>
+                                <Curacion>9</Curacion>
+                            </Hechizo>
+                            <Hechizo>
+                                <Nombre_Hechizo>Descarga sobrenatural</Nombre_Hechizo>
+                                <Damage>10</Damage>
+                                <Curacion>0</Curacion>
+                            </Hechizo>
+                        </Hechizos>
+                    </Personaje>
+                </Personajes>
+            </Partida>
+        </Partidas>
+    </Usuario>
+
+
+    <Usuario id="Lyra">
+        <Password>wwUpEhGpKr</Password>
+        <Partidas>
+            <Partida id="1">
+                <Escenario>2</Escenario>
+                <Duracion>11</Duracion>
+                <Progreso>8</Progreso>
+                <Personajes>
+                    <Personaje id="1">
+                        <Nombre>Laezel</Nombre>
+                        <Raza>Githyanki</Raza>
+                        <Clase>Fighter</Clase>
+                        <Avatar>False</Avatar>
+                        <Nivel>7</Nivel>
+                        <Fuerza>17</Fuerza>
+                        <Destreza>13</Destreza>
+                        <Constitucion>15</Constitucion>
+                        <Inteligencia>10</Inteligencia>
+                        <Sabiduria>12</Sabiduria>
+                        <Carisma>8</Carisma>
+                        <Hechizos>
+                            <Hechizo>
+                                <Nombre_Hechizo>Maleficio</Nombre_Hechizo>
+                                <Damage>6</Damage>
+                                <Curacion>0</Curacion>
+                            </Hechizo>
+                            <Hechizo>
+                                <Nombre_Hechizo>Agarre electrizante</Nombre_Hechizo>
+                                <Damage>8</Damage>
+                                <Curacion>0</Curacion>
+                            </Hechizo>
+                            <Hechizo>
+                                <Nombre_Hechizo>Rayo de escarcha</Nombre_Hechizo>
+                                <Damage>10</Damage>
+                                <Curacion>0</Curacion>
+                            </Hechizo>
+                            <Hechizo>
+                                <Nombre_Hechizo>Curar Heridas</Nombre_Hechizo>
+                                <Damage>0</Damage>
+                                <Curacion>8</Curacion>
+                            </Hechizo>
+                        </Hechizos>
+                    </Personaje>
+
+                    <Personaje id="12">
+                        <Nombre>Javier</Nombre>
+                        <Raza>Drow</Raza>
+                        <Clase>Warlock</Clase>
+                        <Avatar>True</Avatar>
+                        <Nivel>2</Nivel>
+                        <Fuerza>8</Fuerza>
+                        <Destreza>17</Destreza>
+                        <Constitucion>10</Constitucion>
+                        <Inteligencia>15</Inteligencia>
+                        <Sabiduria>12</Sabiduria>
+                        <Carisma>8</Carisma>
+                        <Hechizos>
+                            <Hechizo>
+                                <Nombre_Hechizo>Curacion empoderada</Nombre_Hechizo>
+                                <Damage>0</Damage>
+                                <Curacion>6</Curacion>
+                            </Hechizo>
+                            <Hechizo>
+                                <Nombre_Hechizo>Proyectil m gico</Nombre_Hechizo>
+                                <Damage>15</Damage>
+                                <Curacion>0</Curacion>
+                            </Hechizo>
+                            <Hechizo>
+                                <Nombre_Hechizo>Rayo de escarcha</Nombre_Hechizo>
+                                <Damage>10</Damage>
+                                <Curacion>0</Curacion>
+                            </Hechizo>
+                        </Hechizos>
+                    </Personaje>
+
+
+                    <Personaje id="7">
+                        <Nombre>Jaheira</Nombre>
+                        <Raza>Half-Elf</Raza>
+                        <Clase>Druid</Clase>
+                        <Avatar>False</Avatar>
+                        <Nivel>3</Nivel>
+                        <Fuerza>10</Fuerza>
+                        <Destreza>14</Destreza>
+                        <Constitucion>14</Constitucion>
+                        <Inteligencia>8</Inteligencia>
+                        <Sabiduria>17</Sabiduria>
+                        <Carisma>12</Carisma>
+                        <Hechizos>
+                            <Hechizo>
+                                <Nombre_Hechizo>Palabra de curacion</Nombre_Hechizo>
+                                <Damage>0</Damage>
+                                <Curacion>7</Curacion>
+                            </Hechizo>
+                            <Hechizo>
+                                <Nombre_Hechizo>Ola atronadora</Nombre_Hechizo>
+                                <Damage>16</Damage>
+                                <Curacion>0</Curacion>
+                            </Hechizo>
+                            <Hechizo>
+                                <Nombre_Hechizo>Curacion empoderada</Nombre_Hechizo>
+                                <Damage>0</Damage>
+                                <Curacion>6</Curacion>
+                            </Hechizo>
+                            <Hechizo>
+                                <Nombre_Hechizo>Burla Danina</Nombre_Hechizo>
+                                <Damage>4</Damage>
+                                <Curacion>0</Curacion>
+                            </Hechizo>
+                        </Hechizos>
+                    </Personaje>
+
+                    <Personaje id="4">
+                        <Nombre>Shadowheart</Nombre>
+                        <Raza>Half-Elf</Raza>
+                        <Clase>Cleric</Clase>
+                        <Avatar>False</Avatar>
+                        <Nivel>12</Nivel>
+                        <Fuerza>13</Fuerza>
+                        <Destreza>13</Destreza>
+                        <Constitucion>14</Constitucion>
+                        <Inteligencia>10</Inteligencia>
+                        <Sabiduria>17</Sabiduria>
+                        <Carisma>8</Carisma>
+
+                        <Hechizos>
+                            <Hechizo>
+                                <Nombre_Hechizo>Descarga sobrenatural</Nombre_Hechizo>
+                                <Damage>10</Damage>
+                                <Curacion>0</Curacion>
+                            </Hechizo>
+                            <Hechizo>
+                                <Nombre_Hechizo>Rayo de escarcha</Nombre_Hechizo>
+                                <Damage>10</Damage>
+                                <Curacion>0</Curacion>
+                            </Hechizo>
+                            <Hechizo>
+                                <Nombre_Hechizo>Luz Sanadora</Nombre_Hechizo>
+                                <Damage>0</Damage>
+                                <Curacion>9</Curacion>
+                            </Hechizo>
+                            <Hechizo>
+                                <Nombre_Hechizo>Mano Sanadora</Nombre_Hechizo>
+                                <Damage>0</Damage>
+                                <Curacion>5</Curacion>
+                            </Hechizo>
+                        </Hechizos>
+
+                    </Personaje>
+                </Personajes>
+            </Partida>
+
+            <Partida id="2">
+            </Partida>
+        </Partidas>
+    </Usuario>
+
+</Usuarios>

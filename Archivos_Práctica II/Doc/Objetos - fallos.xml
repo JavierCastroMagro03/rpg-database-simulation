@@ -1,0 +1,42 @@
+<objetos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Objetos.xsd">
+      <armas>
+      </armas>
+
+      <armaduras>
+            <armadura id="21">
+                  <Nombre>Simple Robefsjadfskaufdsahgsfdkuafdasd</Nombre>
+                  <Defensa>10</Defensa>
+                  <Pasiva></Pasiva>
+                  <Tipo>Chestplate</Tipo>
+                  <Rareza>Common</Rareza>
+                  <Valor>20</Valor>
+            </armadura>
+
+            <armadura id="22">
+                  <Nombre>Robe of Summer</Nombre>
+                  <Defensa>10</Defensa>
+                  <Pasiva>Temperature Adjustment</Pasiva>
+                  <Tipo>Chestplate</Tipo>
+                  <Rareza>Uncommon</Rareza>
+                  <Valor>250</Valor>
+            </armadura>
+      </armaduras>
+
+      <consumibles>
+            <consumible id="41">
+                  <Nombre>Potion of Healing</Nombre>
+                  <Tipo>Potions</Tipo>
+                  <Efecto>Healing</Efecto>
+                  <Rareza>Comon</Rareza>
+                  <Valor>60</Valor>
+            </consumible>
+
+            <consumible id="42">
+                  <Nombre>Potion of Speed</Nombre>
+                  <Tipo>Potions</Tipo>
+                  <Efecto>Boost</Efecto>
+                  <Rareza>Uncommon</Rareza>
+                  <Valor>45</Valor>
+            </consumible>
+      </consumibles>
+</objetos>
