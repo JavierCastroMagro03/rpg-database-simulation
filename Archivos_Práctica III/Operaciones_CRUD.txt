@@ -1,0 +1,65 @@
+//CONSULTAS MÁS FRECUENTES//
+
+1. Nombre y contraseña 
+db.Usuarios.find({ ID_Usuario: 1 }, { Nick: 1, Password: 1, _id: 0 })
+
+2. Poder ver las características de tu personaje
+db.Personajes.find({ID_Personaje:"12"})
+db.Personajes.find({Nombre:"Shadowheart"})
+
+3. Estadísticas de juego pasando el nombre de tu personaje
+db.Partidas.find({Usuario_Nick:"Cyrus"})
+
+4. Obtener información sobre enemigos y bosses buscándolo por su nombre.
+db.Enemigos.find({Nombre:"Andorn"})
+db.Boses.find({Nombre:"True Soul Nere"})
+
+
+//CONSULTAS DE FILTRADO//
+
+1. Consulta de Enemigos en un Mapa determinado y que te devuelva su información
+db.Enemigos.find({ Mapa_ID_Sitio: 1 }, { Nombre: 1, Tipo: 1, Fuerza: 1, Destreza: 1, Constitucion: 1, Inteligencia: 1, Sabiduria: 1, Carisma: 1,_id: 0 })
+
+2. Partidas con una duración superior a 60 horas:
+db.Partidas.find({Duración:{$gt: 60}},{Duración: 1, Progreso: 1, Usuario_Nick: 1, _id:0})
+
+3. NPCs con Inteligencia superior a 12
+db.NPCs.find({Inteligencia:{$gt:12}},{Nombre_NPC: 1, Mapa_ID_Sitio: 1, _id: 0})
+
+4. Consulta que devuelva los hechizos que realizan curación
+db.Hechizos.find({Curacion:{$gt:0}},{Nombre_Hechizo: 1, _id: 0})
+
+5. Consulta que te devuelve las formas bestia cuya habilidad es Poison
+db.Formas.find({ Habilidad: "Poison" }, {_id: 0})
+
+
+//CONSULTAS DE ORDENACIÓN//
+
+1. Ordenar las armas de tipo espada alfabéticamente por nombre
+db.Armas.find({ Tipo: "Sword" }).sort({ Nombre: 1 })
+db.Armas.find({ Tipo: "Sword" },{ Nombre: 1, _id: 0 }).sort({ Nombre: 1 })
+
+2. Ordenar las partidas con duración superior a 60 horas de forma descendente por duración
+db.Partidas.find({ Duración: { $gt: 60 } }).sort({ Duración: -1 })
+db.Partidas.find({ Duración: { $gt: 60 } },{Duración: 1, _id: 0}).sort({ Duración: -1 })
+
+3. Enemigos cuyo nombre empiece por la letra “A”, ordenados por fuerza de menor a mayor
+db.Enemigos.find({Nombre: { $regex: /^A/ }}).sort({Fuerza: 1})
+db.Enemigos.find({Nombre: { $regex: /^A/ }},{Fuerza: 1, _id: 0}).sort({Fuerza: 1})
+
+4. Orden de armaduras de tipo chestplate según su defensa de mayor a menor
+db.Armaduras.find({Tipo: "Chestplate"}).sort({Defensa: -1})
+db.Armaduras.find({Tipo: "Chestplate"},{Defensa: 1, _id: 0}).sort({Defensa: -1})
+
+
+//CONSULTAS DE AGRUPACIÓN//
+
+1. Información sobre los enemigos y bosses
+db.Enemigos.aggregate([{$lookup:{from:"Bosses", localField:"Id_Enemigo", foreignField:"Id_Enemigo", as:"boss_data"}},{$unwind:{path:"$boss_data",preserveNullAndEmptyArrays: true}}]).toArray()
+
+2. Armas y armaduras de tipo legendario, mostrando primero las armaduras y luego las armas
+db.Armaduras.aggregate([{$match:{Rareza:"Legendary"}},{$lookup:{from:"Armas",localField:"Rareza",foreignField:"Rareza",as:"ArmasLegen"}},{$unwind:"$ArmasLegen"},{$project:{_id:0,Nombre:"$Nombre",Defensa:"$Defensa",Pasiva:"$Pasiva",Tipo:"$Tipo",Rareza:"$Rareza",Valor:"$Valor",TipoObjeto:{$literal:"Armadura"}}},{$sort:{TipoObjeto:1}},{$unionWith:{coll:"Armas",pipeline:[{$match:{Rareza:"Legendary"}},{$project:{_id:0,Nombre:"$Nombre",Damage:"$Damage",Tipo:"$Tipo",Rareza:"$Rareza",Valor:"$Valor",TipoObjeto:{$literal:"Arma"}}},{$sort:{TipoObjeto:1}}]}}])
+
+3. Consulta en la que se muestra el nombre y el valor de las armas y consumibles con un valor superior a 100
+db.Armas.aggregate([{$match:{Valor:{$gt:100}}},{$project:{_id:0,Nombre:"$Nombre",Valor:"$Valor"}},{$unionWith:{coll:"Consumibles",pipeline:[{$match:{Valor:{$gt:100}}},{$project:{_id:0,Nombre:"$Nombre",Valor:"$Valor"}}]}}])
+

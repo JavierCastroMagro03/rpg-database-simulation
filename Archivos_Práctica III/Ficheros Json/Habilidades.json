@@ -1,0 +1,34 @@
+{
+    "Hechizos":[
+        {"Nombre_Hechizo":"Maleficio","Damage":6,"Curacion":0},
+        {"Nombre_Hechizo":"Ola atronadora","Damage":16,"Curacion":0},
+        {"Nombre_Hechizo":"Proyectil mágico","Damage":15,"Curacion":0},
+        {"Nombre_Hechizo":"Susurros discordantes","Damage":18,"Curacion":0},
+        {"Nombre_Hechizo":"Agarre electrizante","Damage":8,"Curacion":0},
+        {"Nombre_Hechizo":"Burla Danina","Damage":4,"Curacion":0},
+        {"Nombre_Hechizo":"Descarga de fuego","Damage":10,"Curacion":0},
+        {"Nombre_Hechizo":"Descarga sobrenatural","Damage":10,"Curacion":0},
+        {"Nombre_Hechizo":"Rayo de escarcha","Damage":10,"Curacion":0},
+        {"Nombre_Hechizo":"Palabra de curación","Damage":0,"Curacion":7},
+        {"Nombre_Hechizo":"Curar Heridas","Damage":0,"Curacion":8},
+        {"Nombre_Hechizo":"Luz Sanadora","Damage":0,"Curacion":9},
+        {"Nombre_Hechizo":"Bálsamo de Paz","Damage":0,"Curacion":4},
+        {"Nombre_Hechizo":"Curación empoderada","Damage":0,"Curacion":6},
+        {"Nombre_Hechizo":"Curación rápida","Damage":0,"Curacion":3},
+        {"Nombre_Hechizo":"Mano Sanadora","Damage":0,"Curacion":5},
+        {"Nombre_Hechizo":"Toque Médico","Damage":0,"Curacion":6}
+    ],
+
+    "Formas":[
+        {"Animal":"Cat","Habilidad":"Speed"},
+        {"Animal":"Badger","Habilidad":"Poison"},
+        {"Animal":"Bear","Habilidad":"Strength"},
+        {"Animal":"Wolf","Habilidad":"Strength"},
+        {"Animal":"Spider","Habilidad":"Poison"},
+        {"Animal":"Dire Raven","Habilidad":"Speed"},
+        {"Animal":"Owlbear","Habilidad":"Strength"},
+        {"Animal":"Dilophosaurus","Habilidad":"Poison"},
+        {"Animal":"Panther","Habilidad":"Speed"},
+        {"Animal":"Sabre-Toothed Tiger","Habilidad":"Poison"}
+    ]
+}

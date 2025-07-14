@@ -1,0 +1,48 @@
+Cabe destacar, que en la creación de índices, como la cantidad de documentos no es super elevada, el tiempo de cada consulta se mantiene en 0ms.
+Los índices han resultado óptimos a la hora de filtrar, ya que se recorren menos documentos y claves y también dan una mejora de rendimiento en las operaciones de ordenación.
+
+INSTRUCCIONES	
+- Colección usuarios:
+Creación del índice:
+db.Usuarios.createIndex({ ID_Usuario: 1 })
+
+- Colección Partidas:
+Creación del índice:
+db.Partidas.createIndex({ Duración: 1 })
+
+- Colección Personajes:
+Creación del índice:
+db.Personajes.createIndex({ID_Personaje: 1})
+Creación del índice:
+db.Personajes.createIndex({Nombre: 1})
+
+- Colección Boses y enemigos:
+Creación de los índices:
+db.Enemigos.createIndex({ Id_Enemigo: 1 })
+db.Boses.createIndex({ Id_Enemigo: 1 })
+
+- Colección sitios:
+Creación del índice:
+db.Enemigos.createIndex({ Mapa_ID_Sitio: 1 })
+
+- Colección NPCs:
+Creación del índice:
+db.NPCs.createIndex({ Inteligencia: 1 })
+
+- Colección Armas y Consumibles:
+Creación de índices:
+db.Armas.createIndex({ Valor: 1 })
+db.Consumibles.createIndex({ Valor: 1 })
+
+- Colección Armaduras:
+Creación del índice:
+db.Armaduras.createIndex({ Tipo: 1 })
+
+- Colección Hechizos:
+Creación del índice:
+db.Hechizos.createIndex({ Curacion: 1 })
+
+- Colección Formas:
+Creación del índice:
+db.Formas.createIndex({ Habilidad: 1 })
+
